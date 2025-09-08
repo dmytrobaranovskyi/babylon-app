@@ -116,7 +116,7 @@ const main = () => {
 
     function sculptAtPointer() {
       const pick = scene.pick(scene.pointerX, scene.pointerY); //predicate
-      if (!pick?.hit || !pick.pickedPoint) return;
+      if (!pick?.hit || !pick.pickedPoint) return;  
 
       const p = pick.pickedPoint!;
       // Call your WASM kernel (expects xyz triple)
